@@ -1,14 +1,15 @@
-library(tidyverse)
+library(readr)
 library(dash)
 library(dashCoreComponents)
 library(dashHtmlComponents)
 library(dashBootstrapComponents)
 library(ggplot2)
 library(plotly)
+library(tidyverse)
 
 app <- Dash$new(external_stylesheets = dbcThemes$BOOTSTRAP)
 
-df  <-  readr::read_csv(here::here('data','processed','clean_data.csv'))
+df  <- read.csv("data/processed/clean_data.csv",row.names = 1 )
 
 app$layout(
   dbcContainer(
@@ -127,3 +128,4 @@ app$callback(
 )
 
 app$run_server(host = '0.0.0.0')
+#app$run_server(debug = T)
