@@ -23,4 +23,4 @@ Please check the requirements.txt in this repo.
 
 ## License
 
-Please refer to the License File [here](https://github.com/UBC-MDS/mds532_viz_group25/blob/main/LICENSE)
+Please refer to the License File [here](https://github.com/UBC-MDS/mds532_viz_group25-R/blob/main/LICENSE)
