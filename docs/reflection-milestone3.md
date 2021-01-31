@@ -1,16 +1,26 @@
 ## Reflection on the interactive app
 
-Based on the milestone 3 instructions and peer’s feedbacks, we have successfully implemented a working skeleton of our proposed dashboard in R and added some minor improvements in response to suggestions.
+Based on the milestone 3 instructions and feedback, we have successfully implemented a working skeleton of our proposed dashboard in R and added some minor improvements in response to suggestions.
 
-Our interactive app is a visualization tool to display violent crimes of 68 U.S. cities over 45 years from 1975 to 2015. We have two plots in this app. The one on the left by default is set to display the evolution of total violent crimes of the city Los Angeles over 45 years. By adding four lines here, this plot also demonstrates the evolution of each category of crimes. The other one on  the right is a bar chart that by default is set to display violent crime in four categories of the city Los Angeles in 2015. And each bar has been annotated with label for a quick review.
+Our R version app updates the same implementation as milestone 2. 
 
-We also have implemented a control panel on the left that can facilitate a user to update the bar chart geological and chronically. The bar chart will eventually display the counts of different type of crimes per 100k in the city and the year of interest.
+#### Update 1 : 
+We arrange the layout of the bar and line chart, we design the dropdown menus to update both charts,  however, the 'year' dropdown menu is reserved for the bar chart. Hence, it is aesthetically appealing to put the bar chart next to the dropdown menus, and it will be also more convenient for a user to use our app.
+####Update 2 :  
+By adding four lines to the line chart, this plot now can also demonstrate the evolution of each category of crimes.
+Both charts are set by default to display violent crime in the city of Los Angeles in 2015.
+#### Some ggplotly() difficulties/issues:
+We find ggplotly() overwrites some setups in ggplot(), so we have to removethe label annotated on each bar. But We think it is not a big issue since ggplotly() provides interactivity to be able to show the value.  
 
-The control panel consists of three dropdown menus. From top to bottom, they respectively allow a user to choose a state from the “State” menus, a city from the “City” menus, a year from the “Year” menu.
+There is a minor bug while showing the legend in the bar chart. We could not find a solution. 
+#### Deployment issue:  
+It seems that dash is more generally used in Python rather than R. When searching on the internet for help, the amount of results for R is less than Python.  In the end, it turns out good
+#### Future improvements and final remarks
 
-The two plots made by altair have been replaced with ggplot in this new version. One challenge arise in this process. It seems that dash is more generally used in Python rather than R. When searching on the internet for help, the amount of results for R is less than Python. 
+We appreciate all the feedbacks that give an insight into a different perspective for the same problem that we were trying to solve.  Followings will be implemented in milestone 4:
 
-The peer feedbacks gave an insight into different perspective for the same problem that we were tryingto solve. We are going to aestheticly make the dashboard visually more comfortable and readable, including modify titles and labels, and add additional interactive features.
+1. Match colors between line chart and bar chart
+2.  Add a text box to present the total crime in the selected state
+3.  Aesthetically make the dashboard visually more comfortable and readable, including modify titles and labels, and add additional interactive features (pending).
 
-
-
+Team 25
