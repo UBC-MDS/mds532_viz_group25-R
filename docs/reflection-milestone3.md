@@ -17,7 +17,7 @@ There is a minor bug while showing the legend in the bar chart. We could not fin
 It seems that dash is more generally used in Python rather than R. When searching on the internet for help, the amount of results for R is less than Python.  In the end, it turns out good
 #### Future improvements and final remarks
 
-We appreciate all the feedbacks that give an insight into a different perspective for the same problem that we were trying to solve.  Followings will be implemented in milestone 4:
+We appreciate all the feedbacks that give an insight into a different perspective for the same problem that we were trying to solve. Followings will be implemented in milestone 4:
 
 1. Match colors between line chart and bar chart
 
