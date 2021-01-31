@@ -20,7 +20,9 @@ It seems that dash is more generally used in Python rather than R. When searchin
 We appreciate all the feedbacks that give an insight into a different perspective for the same problem that we were trying to solve.  Followings will be implemented in milestone 4:
 
 1. Match colors between line chart and bar chart
+
 2.  Add a text box to present the total crime in the selected state
+
 3.  Aesthetically make the dashboard visually more comfortable and readable, including modify titles and labels, and add additional interactive features (pending).
 
 
