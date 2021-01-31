@@ -6,7 +6,7 @@ Our R version app updates the same implementation as milestone 2. 
 
 #### Update 1 : 
 We arrange the layout of the bar and line chart, we design the dropdown menus to update both charts,  however, the 'year' dropdown menu is reserved for the bar chart. Hence, it is aesthetically appealing to put the bar chart next to the dropdown menus, and it will be also more convenient for a user to use our app.
-####Update 2 :  
+#### Update 2 :  
 By adding four lines to the line chart, this plot now can also demonstrate the evolution of each category of crimes.
 Both charts are set by default to display violent crime in the city of Los Angeles in 2015.
 #### Some ggplotly() difficulties/issues:
@@ -23,4 +23,4 @@ We appreciate all the feedbacks that give an insight into a different perspecti
 2.  Add a text box to present the total crime in the selected state
 3.  Aesthetically make the dashboard visually more comfortable and readable, including modify titles and labels, and add additional interactive features (pending).
 
-Team 25
+
