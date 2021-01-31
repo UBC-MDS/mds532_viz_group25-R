@@ -14,7 +14,7 @@ df  <- read.csv("data/processed/clean_data.csv",row.names = 1 )
 app$layout(
   dbcContainer(
   list(
-    htmlH2('U.S. city crime visualizer'),
+    htmlH2('U.S. City Crime Visualization'),
     htmlBr(),
     dbcRow(
       list (
@@ -57,14 +57,23 @@ app$layout(
           list(
             htmlDiv(id = 'output-area2'),
             dccGraph(id='plot-area2'),
-            htmlH4('Year range:'),
+            htmlH4('Year Range'),
             dccRangeSlider(
-              count = 1,            
               id="yrange",
               min = 1975,
               max = 2015,
+              marks = list(
+                '1975' = '1975',
+                '1980' = '1980',
+                '1985' = '1985',
+                '1990' = '1990',
+                '1995' = '1995',
+                '2000' = '2000',
+                '2005' = '2005',
+                '2010' = '2010',
+                '2015' = '2015'
+              ),
               value= list(1975, 2015),  # REQUIRED to show the plot on the first page load
-              step = 1,
             )       
           ) 
         )
@@ -141,7 +150,7 @@ app$callback(
     line <- data_line_plot %>% ggplot(aes(x = year,y = value, color = type)) +
       geom_line(size = 1) +
       labs(y = "Crime per 100K", x = "Year", color = "Crime types") +
-      ggtitle("Violent crimes V.S. Years") +
+      ggtitle("Violent crimes by Years") +
       scale_x_continuous (breaks = c(seq(1975,2015,5)))+
       theme(
         plot.title = element_text(size = 18),
