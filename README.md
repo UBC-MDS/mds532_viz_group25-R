@@ -17,10 +17,6 @@ In general, the dashboard can clearly display the number of violent crimes in st
 ![](app-r.JPG)
 
 
-## Requirements
-
-Please check the requirements.txt in this repo.
-
 ## License
 
 Please refer to the License File [here](https://github.com/UBC-MDS/mds532_viz_group25-R/blob/main/LICENSE)
